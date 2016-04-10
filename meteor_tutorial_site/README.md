@@ -1,7 +1,7 @@
 # Meteor Todo List
 
-### From [Meteor Creating an app](https://www.meteor.com/tutorials/blaze/creating-an-app)
-
+[Meteor Creating an app](https://www.meteor.com/tutorials/blaze/creating-an-app)
+[Meteor Project Github](https://github.com/meteor/simple-todos)
 
 ---
 
