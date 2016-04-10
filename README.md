@@ -1,7 +1,9 @@
 # Meteor Project
 
 [Meteor Creating an app](https://www.meteor.com/tutorials/blaze/creating-an-app)
+
 [Meteor Project Github](https://github.com/meteor)
+
 [Meteor Project Github](https://github.com/meteor/simple-todos)
 
 ### Import
@@ -76,4 +78,5 @@ meteor add reactive-dict
 ---
 
 [Tim Oien](oien.tim@gmail.com)
+
 [Linkedin](https://www.linkedin.com/in/timothy-oien-20699394)
