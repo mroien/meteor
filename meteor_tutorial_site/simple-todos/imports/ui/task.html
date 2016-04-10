@@ -1,9 +1,43 @@
+<!--Add buttons to Task component 5.1-->
 <template name="task">
-    <li class="{{#if checked}}checked{{/if}}">
+    <!--Add private class to private tasks 10.5-->
+    <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
         <button class="delete">&times;</button>
 
         <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
 
-        <span class="text">{{text}}</span>
+        <!--Add private button 10.4-->
+        {{#if isOwner}}
+            <button class="toggle-private">
+                {{#if private}}
+                    Private
+                {{else}}
+                    Public
+                {{/if}}
+            </button>
+        {{/if}}
+
+        <!--Display username next to task 8.7-->
+        <span class="text"><strong>{{username}}</strong> - {{text}}</span>
     </li>
 </template>
+
+<!--<template name="task">-->
+    <!--<li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">-->
+        <!--<button class="delete">&times;</button>-->
+
+        <!--<input type="checkbox" checked="{{checked}}" class="toggle-checked" />-->
+
+        <!--{{#if isOwner}}-->
+            <!--<button class="toggle-private">-->
+                <!--{{#if private}}-->
+                    <!--Private-->
+                <!--{{else}}-->
+                    <!--Public-->
+                <!--{{/if}}-->
+            <!--</button>-->
+        <!--{{/if}}-->
+
+        <!--<span class="text"><strong>{{username}}</strong> - {{text}}</span>-->
+    <!--</li>-->
+<!--</template>-->

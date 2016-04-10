@@ -1,11 +1,57 @@
+<!--<body>-->
+<!--&lt;!&ndash;username: mroien&ndash;&gt;-->
+<!--&lt;!&ndash;password: password&ndash;&gt;-->
+<!--<div class="container">-->
+    <!--<header>-->
+        <!--&lt;!&ndash;Display incompleteCount&ndash;&gt;-->
+        <!--<h1>Todo List ({{incompletedCount}})</h1>-->
+
+        <!--&lt;!&ndash;Add hide-complete checkbox to HTML 7.1&ndash;&gt;-->
+        <!--<label class="hide-completed">-->
+            <!--<input type="checkbox" />-->
+            <!--Hide Completed Tasks-->
+        <!--</label>-->
+
+        <!--&lt;!&ndash;Include loginButtons 8.2&ndash;&gt;-->
+        <!--{{> loginButtons }}-->
+
+        <!--&lt;!&ndash;Only show add task form if logged in 8.6&ndash;&gt;-->
+        <!--{{#if currentUser}}-->
+
+        <!--&lt;!&ndash;Add form fro new tasks 4.1&ndash;&gt;-->
+        <!--<form class="new-task">-->
+            <!--<input type="text" name="text" placeholder="Type to add new tasks" />-->
+        <!--</form>-->
+        <!--{{/if}}-->
+    <!--</header>-->
+
+    <!--&lt;!&ndash;Add starter code to HTML 2.2&ndash;&gt;-->
+    <!--<ul>-->
+        <!--{{#each tasks}}-->
+            <!--{{> task}}-->
+        <!--{{/each}}-->
+    <!--</ul>-->
+
+<!--</div>-->
+<!--</body>-->
+
 <body>
 <div class="container">
     <header>
-        <h1>Todo List</h1>
+        <h1>Todo List ({{incompleteCount}})</h1>
 
-        <form class="new-task">
-            <input type="text" name="text" placeholder="Type to add new tasks" />
-        </form>
+        <label class="hide-completed">
+            <input type="checkbox" />
+            Hide Completed Tasks
+        </label>
+
+        {{> loginButtons}}
+
+        {{#if currentUser}}
+            <form class="new-task">
+                <input type="text" name="text" placeholder="Type to add new tasks" />
+            </form>
+        {{/if}}
     </header>
 
     <ul>
@@ -13,6 +59,5 @@
             {{> task}}
         {{/each}}
     </ul>
-
 </div>
 </body>
