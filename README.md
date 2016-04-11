@@ -4,7 +4,7 @@
 
 [Meteor Project Github](https://github.com/meteor)
 
-[Meteor Project Github](https://github.com/meteor/simple-todos)
+[Meteor Project Github Simple todo](https://github.com/meteor/simple-todos)
 
 ### Import
 - All logic goes in _import_ folders
